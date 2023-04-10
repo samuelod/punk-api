@@ -8,7 +8,7 @@ const Filter = (props) => {
 
   return (
     <div className='filterSection'>
-        <p>Filter Beers By: </p>
+        <p>Filter: </p>
         <div className='filterList'>
             <div className='filterType'>
                 <input onClick={filterByABV} type="checkbox" id='abv' />
@@ -20,7 +20,7 @@ const Filter = (props) => {
             </div>
             <div className='filterType'>
                 <input onClick={filterByPH} type="checkbox" id='ph' />
-                <label htmlFor="ph">High ABV (&lsaquo; 4)</label>
+                <label htmlFor="ph">High ABV (ph &lsaquo; 4)</label>
             </div>
         </div>
     </div>

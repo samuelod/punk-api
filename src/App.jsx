@@ -1,17 +1,22 @@
-import React from 'react'
+import React from 'react';
 import './App.scss';
-import BeerList from './Components/BeerList/BeerList';
-import BeerInfo from './Components/BeerInfo/BeerInfo';
-import Filter from './Components/Filter/Filter';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import BeerList from './Components/BeerList/BeerList';
+// import BeerInfo from './Components/BeerInfo/BeerInfo';
+// import Filter from './Components/Filter/Filter';
 import Header from './Components/Header/Header';
-import Nav from './Components/Nav/Nav';
+// import Nav from './Components/Nav/Nav';
 import SearchBar from './Components/SearchBar/SearchBar';
 
 
 const App = () => {
+
   return (
-    <div>App</div>
+    <div className='App'>
+      < Header />
+        < SearchBar />
+    </div>
   )
 }
 
-export default App
+export default App;

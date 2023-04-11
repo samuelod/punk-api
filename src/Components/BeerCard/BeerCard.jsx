@@ -2,17 +2,23 @@ import React from 'react'
 import './BeerCard.scss'
 
 const BeerCard = (props) => {
-    const {name, tagline, firstBrewed, img, abv, ph } = props
-  return (
-    <div className='beer__Card'>
-        <img src={img} alt="Beer Picture" className='beer__Picture' />
-        <h1 className='beer__Name'>{name}</h1>
-        <p className='beer__Tagline'>{tagline}</p>
-        <p>First Brewed: <b>{firstBrewed}</b></p>
-        <h5>ABV: {abv}</h5>
-        <h5>pH: {ph}</h5>    
-    </div>
-  )
+    const summary = (description) => {
+        return description.length < 180 ? description : description.substring(0, description.lastIndexOf(".", 180)) + ".";
+
 }
+    const {beer} = props
+    const {name, description, image_url, abv} = beer;
+  return (
+    <div className='beerCard'>
+      <img src={image_url} alt={name} />
+    <div className='beerName'>
+        <h2>{name.split("-")[0]}</h2>
+    </div>
+    <span>ABV {abv}%</span>
+    <p>{summary(description)}</p>
+
+    </div>
+  );
+};
 
 export default BeerCard

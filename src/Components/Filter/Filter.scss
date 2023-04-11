@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin: 5vh;
 
     p {
@@ -15,12 +16,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+		margin: 5vh;
 }
 
     
 
 .filterType {
-		flex-direction: row;
     margin: 0 10px;
     padding: 5px;
     background-color: #ffffff;

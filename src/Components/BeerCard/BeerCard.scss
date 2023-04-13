@@ -1,0 +1,25 @@
+.__Card {
+    padding: 20px 14px;
+    text-align: center;
+    background-color: rgba(162,107,20,0.3);
+    border-radius: 0.4em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+
+    img{
+        height: 220px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    span{
+        font-family: "Monaco", "Menlo", monospace;
+        font-size: 11px;
+        letter-spacing: .3px;
+        color: #ffffff;
+        border-radius: 0.4em;
+        background-color: rgba(0,0,0,0.3);
+        padding: 3px 10px;
+        display: inline-block;
+        margin-bottom: 20px;    
+    }
+}

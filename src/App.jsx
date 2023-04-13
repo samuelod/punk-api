@@ -1,24 +1,12 @@
 import React from 'react';
-import './App.scss';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import BeerList from './Components/BeerList/BeerList';
-// import BeerInfo from './Components/BeerInfo/BeerInfo';
-import Filter from './Components/Filter/Filter';
-import Header from './Components/Header/Header';
-// import Nav from './Components/Nav/Nav';
-import SearchBar from './Components/SearchBar/SearchBar';
-
+import BeerCard from './Components/BeerCard/BeerCard'
 
 const App = () => {
-
   return (
-    <div className='App'>
-      <img src="./Assets/images/beerlogo.svg" alt="" srcset="" />
-      < Header />
-        < SearchBar />
-        <Filter />
-    </div>
+    <>
+    <BeerCard/>
+    </>
   )
 }
 
-export default App;
+export default App

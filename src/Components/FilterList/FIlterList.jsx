@@ -12,7 +12,7 @@ const FilterList = (props) => {
 
   return (
     <section className='filter__List'>
-        <h4>Filter</h4>
+        <h4>Filter by:</h4>
         {filters.map(getFilter)}
     </section>  
   );

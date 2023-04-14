@@ -8,30 +8,25 @@
         outline: none;
         width: 100%;
         background-color: #ebedf0;
-        background-image: url('../../Assets/images/icons8-search-30.svg');
-        background-repeat: no-repeat;
-        color: #f9d094;
+        background-position: left;
         font-size: 18px;
         letter-spacing: .2px;
 
         &::placeholder {
-            color:#f9d094;
+            color:#969faf;
             letter-spacing: .2px;
         }
     }
 
 
     input[type=text] {
-        transition: width 0.4s ease-in-out;
         outline: none;
+        color: black;
       }
       
       input[type=text]:focus {
         background-color: white;
         border: 1.5px solid #bf862d;
-        background-image: url('../../Assets/images/bronze-search.svg');
-        background-position: left;
-        background-repeat: no-repeat;
       }
 }
 

@@ -1,4 +1,4 @@
-.__Side {
+.nav__Side {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -12,7 +12,7 @@
         padding: 0 16px;
     }
 
-    .__Content {
+    .nav__Content {
         @media all and (max-width: 768px) {
             display: none;
         }
@@ -22,7 +22,7 @@
         }
     }
 
-    .__Logo {
+    .nav__Logo {
         display: flex;
         justify-content: center;
 

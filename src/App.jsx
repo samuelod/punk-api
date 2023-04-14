@@ -15,7 +15,7 @@ const App = () => {
 
   const handleChange = (e) => setSearchTerm(e.target.value);
 
-  const handleChecked = (filter, isChecked) => {
+  const handleCheck = (filter, isChecked) => {
     const filtersCopy = Object.assign([], filters);
     const index = filters.findIndex((f) => f.value === filter.value);
     filtersCopy[index].isChecked = isChecked;
@@ -24,12 +24,9 @@ const App = () => {
 
 
   const fetchBeers = () => {
-    fetch("https://api.punkapi.com/v2/beers")
-    
+    fetch("https://api.punkapi.com/v2/beers?page=2&per_page=80")
       .then((response) => response.json())
-     
       .then((data) => setBeers(data))
-      
       .catch((error) => console.log(error));
   };
 
@@ -38,14 +35,11 @@ const App = () => {
 
   return (
     <>
-      <Nav
-        filters={filters}
-        handleChange={handleChange}
-        handleChecked={handleChecked}
-      />
+      <Nav filters={filters} handleChange={handleChange} handleChecked={handleCheck} />
       <Head beers={beers} searchTerm={searchTerm} filters={filters} />
     </>
   );
-};
+}
+
 
 export default App

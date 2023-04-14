@@ -20,4 +20,4 @@ const BeerList = (props) => {
 };
 
   
-export default BeerList
+export default BeerList;

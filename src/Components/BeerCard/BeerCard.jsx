@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./BeerCard.scss";
 
 const BeerCard = (props) => {
     const summary = (description) => {

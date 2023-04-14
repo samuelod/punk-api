@@ -1,0 +1,79 @@
+.searchBar {
+    margin: 30px 0 30px 0;
+
+    input {
+        padding: 8px 0;
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        width: 100%;
+        background-color: #ebedf0;
+        background-image: url('../../Assets/images/icons8-search-30.svg');
+        background-repeat: no-repeat;
+        color: #f9d094;
+        font-size: 18px;
+        letter-spacing: .2px;
+
+        &::placeholder {
+            color:#f9d094;
+            letter-spacing: .2px;
+        }
+    }
+
+
+    input[type=text] {
+        transition: width 0.4s ease-in-out;
+        outline: none;
+      }
+      
+      input[type=text]:focus {
+        background-color: white;
+        border: 1.5px solid #bf862d;
+        background-image: url('../../Assets/images/bronze-search.svg');
+        background-position: left;
+        background-repeat: no-repeat;
+      }
+}
+
+
+
+
+
+// .searchBar {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content:space-between;
+//     align-items: center;
+//     padding: 20px;
+
+//     input {
+//         background-color: #ebedf0;
+//         background-image: url('../../Assets/images/icons8-search-30.svg');
+//         background-position: left;
+//         background-repeat: no-repeat;
+//         padding-left: 25px;
+//         border-radius: 4px;
+//         width: 20%;
+//         height: 36px;
+//         border: 0;
+//         font-size: 10px;
+
+//     }
+
+//     input[type=text] {
+//         transition: width 0.4s ease-in-out;
+//         outline: none;
+//       }
+      
+//       input[type=text]:focus {
+//         width: 50%;
+//         height: 150%;
+//         font-size: 150%;
+//         background-color: white;
+//         border: 2.5px solid #bf862d;
+//         background-image: url('../../Assets/images/bronze-search.svg');
+//         background-repeat: no-repeat;
+//         padding: 15px 40px;
+//       }
+// }
+

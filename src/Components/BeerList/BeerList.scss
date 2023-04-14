@@ -1,5 +1,6 @@
 .beer__List {
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     left: 280px;
     position: absolute;

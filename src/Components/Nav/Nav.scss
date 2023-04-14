@@ -6,7 +6,9 @@
     height: 100vh;
     background-color: #2e2a24;
     color: #f9d094;
-    padding: 24px;
+    padding: 2em 20px 0;
+    border-right: 2px solid rgba(0,0,0,0.5);
+    border-right-style: groove;
 
     @media all and (max-width: 768px) {
         padding: 0 16px;
@@ -32,7 +34,8 @@
         }
 
         img {
-            height: 120px;
+            height: 128px;
+            width: 128px;
             opacity: .95;
 
             @media all and (max-width: 768px) {

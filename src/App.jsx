@@ -24,7 +24,7 @@ const App = () => {
 
 
   const fetchBeers = () => {
-    fetch("https://api.punkapi.com/v2/beers?page=2&per_page=80")
+    fetch("https://api.punkapi.com/v2/beers")
       .then((response) => response.json())
       .then((data) => setBeers(data))
       .catch((error) => console.log(error));
@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <>
-      <Nav filters={filters} handleChange={handleChange} handleChecked={handleCheck} />
+      <Nav filters={filters} handleChange={handleChange} handleCheck={handleCheck} />
       <Head beers={beers} searchTerm={searchTerm} filters={filters} />
     </>
   );

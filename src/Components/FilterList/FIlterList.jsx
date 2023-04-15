@@ -3,7 +3,7 @@ import "./FilterList.scss";
 import Filter from '../Filter/Filter';
 
 const FilterList = (props) => {
-    const {filters, handleCheck} = props;
+    const { handleCheck, filters} = props;
     const getFilter = (filter, index) => (
         <div className={index}>
             <Filter filter={filter} handleCheck={handleCheck} />

@@ -3,7 +3,7 @@ import "./BeerCard.scss";
 
 const BeerCard = (props) => {
     const summary = (description) => {
-        return description.length < 200 ? description : description.substring(0, description.lastIndexOf(".", 200)) + ".";
+        return description.length < 190 ? description : description.substring(0, description.lastIndexOf(".", 190)) + ".";
     }
 
     const {beer} = props

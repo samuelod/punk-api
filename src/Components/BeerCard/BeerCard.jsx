@@ -17,7 +17,7 @@ const BeerCard = (props) => {
         <span>ABV {abv}%</span>
         <p>{summary(description)}</p>
     </div>
-  )
-}
+  );
+};
 
-export default BeerCard
+export default BeerCard;

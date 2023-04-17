@@ -8,12 +8,12 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const [filters, setFilters] = useState([
-    { value: "abv", label: "High PBV (> 6.0%)", isChecked: false},
+    { value: "abv", label: "High ABV (> 6.0%)", isChecked: false},
     { value: "classic", label: "Classic Range", isChecked: false},
     { value: "acidic", label: "Acidic (pH < 4)", isChecked: false},
   ]);
 
-  const handleChange = (e) => setSearchTerm(e.target.value);
+  const onChange = (e) => setSearchTerm(e.target.value);
 
   const handleCheck = (filter, isChecked) => {
     const filtersCopy = Object.assign([], filters);
@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <>
-      <Nav filters={filters} handleChange={handleChange} handleCheck={handleCheck} />
+      <Nav filters={filters} onChange={onChange} handleCheck={handleCheck} />
       <Head beers={beers} searchTerm={searchTerm} filters={filters} />
     </>
   );

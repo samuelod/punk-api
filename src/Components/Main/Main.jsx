@@ -1,5 +1,5 @@
 import React from 'react';
-import './Head.scss';
+import './Main.scss';
 import BeerList from '../BeerList/BeerList';
 
 const Head = (props) => {

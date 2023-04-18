@@ -10,12 +10,12 @@
     border-right: 2px solid rgba(0,0,0,0.5);
     border-right-style: groove;
 
-    @media all and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         padding: 0 16px;
     }
 
     .nav__Content {
-        @media all and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             display: none;
         }
     }
@@ -33,12 +33,12 @@
             width: 128px;
             opacity: .95;
 
-            @media all and (max-width: 768px) {
+            @media screen and (max-width: 768px) {
                 height: 90px;
             }
         }
     }
-    @media all and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         z-index: 999;
         width: auto;
     }

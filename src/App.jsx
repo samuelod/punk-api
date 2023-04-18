@@ -27,7 +27,7 @@ const App = () => {
 
 //FETCH BEERS FROM PUNK API 
   const fetchBeers = () => {
-    fetch("https://api.punkapi.com/v2/beers")
+    fetch("https://api.punkapi.com/v2/beers?page=2&per_page=80")
       .then((response) => response.json()) 
       .then((data) => setBeers(data)) //Add beers recieved to setBeers Array 
       .catch((error) => console.log(error));

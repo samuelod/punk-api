@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/punk-api/static/css/main.2c3fcf57.css",
+    "main.js": "/punk-api/static/js/main.0613567f.js",
+    "static/js/787.ae7c3095.chunk.js": "/punk-api/static/js/787.ae7c3095.chunk.js",
+    "static/media/beerlogo.svg": "/punk-api/static/media/beerlogo.1387a6e394bb78ab636bc7e629d060ed.svg",
+    "static/media/icons8-search-30.svg": "/punk-api/static/media/icons8-search-30.9a0dc8623d496099d932.svg",
+    "static/media/icons8-search2.svg": "/punk-api/static/media/icons8-search2.119bb5d98d7ce330631c.svg",
+    "index.html": "/punk-api/index.html",
+    "main.2c3fcf57.css.map": "/punk-api/static/css/main.2c3fcf57.css.map",
+    "main.0613567f.js.map": "/punk-api/static/js/main.0613567f.js.map",
+    "787.ae7c3095.chunk.js.map": "/punk-api/static/js/787.ae7c3095.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c3fcf57.css",
+    "static/js/main.0613567f.js"
+  ]
+}

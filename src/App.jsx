@@ -15,7 +15,7 @@ const App = () => {
     { value: "acidic", label: "Acidic (pH < 4)", isChecked: false},
   ]);
 
-  const onChange = (e) => setSearchTerm(e.target.value); //Sets search term to value the user inputs 
+  const handleChange = (e) => setSearchTerm(e.target.value); //Sets search term to value the user inputs 
  
   //Sets the filters that are being applied upon filter being used
   const handleCheck = (filter, isChecked) => {
@@ -27,7 +27,7 @@ const App = () => {
 
 //FETCH BEERS FROM PUNK API 
   const fetchBeers = () => {
-    fetch("https://api.punkapi.com/v2/beers?page=2&per_page=80")
+    fetch("https://api.punkapi.com/v2/beers")
       .then((response) => response.json()) 
       .then((data) => setBeers(data)) //Add beers recieved to setBeers Array 
       .catch((error) => console.log(error));
@@ -38,11 +38,11 @@ const App = () => {
 
   return (
     <>
-      <Nav filters={filters} onChange={onChange} handleCheck={handleCheck} />
+      <Nav filters={filters} handleChange={handleChange} handleCheck={handleCheck} />
       <Main beers={beers} searchTerm={searchTerm} filters={filters} />
     </>
   );
 }
 
 
-export default App
+export default App;

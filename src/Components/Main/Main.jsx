@@ -2,7 +2,7 @@ import React from 'react';
 import './Main.scss';
 import BeerList from '../BeerList/BeerList';
 
-const Head = (props) => {
+const Main = (props) => {
     const { beers, filters, searchTerm } = props; 
   return (
     <>
@@ -11,4 +11,4 @@ const Head = (props) => {
   );
 };
 
-export default Head;
+export default Main;
